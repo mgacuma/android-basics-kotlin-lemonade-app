@@ -145,19 +145,19 @@ class MainActivity : AppCompatActivity() {
         val imageLemonState: ImageView = findViewById(R.id.image_lemon_state)
         when(lemonadeState){
             SELECT -> {
-                textAction.setText("Click to select a lemon!");
+                textAction.setText(R.string.lemon_select);
                 imageLemonState.setImageResource(R.drawable.lemon_tree);
             }
             SQUEEZE -> {
-                textAction.setText("Click to juice the lemon!");
+                textAction.setText(R.string.lemon_squeeze);
                 imageLemonState.setImageResource(R.drawable.lemon_squeeze);
             }
             DRINK -> {
-                textAction.setText("Click to drink your lemonade!");
+                textAction.setText(R.string.lemon_drink);
                 imageLemonState.setImageResource(R.drawable.lemon_drink);
             }
             RESTART -> {
-                textAction.setText("Click to start again!");
+                textAction.setText(R.string.lemon_empty_glass);
                 imageLemonState.setImageResource(R.drawable.lemon_restart);
             }
         }
